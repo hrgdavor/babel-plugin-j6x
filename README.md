@@ -50,25 +50,34 @@ the function `h` is implemented in such way that these calls to `h` result in `d
 
 ```js
 {
-  "tag": "div",
-  "attr": null,
-  "children": [
+  tag: "div",
+  attr: null,
+  directive: null,
+  children: [
     {
-      "tag": "div",
-      "attr": { "class": "name" },
-      "children": [
-        { "tag": "b", "attr": null,  "children": [ "Name: " ] },
+      tag: "div",
+      attr: { "class": "name" },
+      directive: null,
+      children: [
+        { tag: "b", attr: null, directive: null,  children: [ "Name: " ] },
         ()=>person.name
       ]
     },
     {
-      "tag": "div",
-      "attr": { "class": "city" },
-      "children": [
-        { "tag": "b", "attr": null,  "children": [ "City: " ] },
+      tag: "div",
+      attr: { "class": "city" },
+      directive: null,
+      children: [
+        { tag: "b", attr: null, directive: null,  children: [ "City: " ] },
         ()=>person.city
       ]
-    }
+    },
+    {
+      tag: "button",
+      attr: null,
+      directive: {x:{click:'showDetails'}},
+      children: [ t('details') ]
+    }      
   ]
 }
 ```
