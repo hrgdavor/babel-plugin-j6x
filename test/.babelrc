@@ -1,0 +1,8 @@
+{
+  "retainLines": true,
+  "presets": [],
+  "plugins": [
+  	["../index", {dynamicTranslation:false}]
+  ],
+  "ignore": ["node_modules"]
+}

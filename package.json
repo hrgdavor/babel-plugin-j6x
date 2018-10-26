@@ -1,0 +1,56 @@
+{
+  "name": "babel-plugin-j6x",
+  "version": "1.0.0",
+  "description": "Babel plugin for JSX to JS transformation for j6x library",
+  "main": "index.js",
+  "unpkg": "dist/babel-plugin-j6x.min.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "karma start --no-auto-watch --single-run true",
+    "dev-test": "karma start",
+    "build": "babel index.js  -o dist/babel-plugin-j6x.min.js",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrgdavor/babel-plugin-j6x.git"
+  },
+  "keywords": [
+    "babel",
+    "j6x",
+    "jsx"
+  ],
+  "author": "Davor hrg",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://hrgdavor/babel-plugin-j6x/issues"
+  },
+  "homepage": "https://hrgdavor/babel-plugin-j6x#readme",
+  "peerDependencies": {
+    "babel-plugin-syntax-jsx": "^6.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-syntax-jsx": "^6.8.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.12.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1"
+  }
+}
