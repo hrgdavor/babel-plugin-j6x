@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-j6x",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Babel plugin for JSX to JS transformation for j6x library",
   "main": "index.js",
   "unpkg": "dist/babel-plugin-j6x.min.js",
