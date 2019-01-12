@@ -142,7 +142,7 @@ module.exports = function (babel) {
       } else {
         var name = prop.name.name;
         var idx = name.indexOf('-');
-        var pref;
+        var pref = null;
 
         if(idx != -1){
           pref = name.substring(0,idx);

@@ -89,6 +89,7 @@ so the final result in HTML is:
 <div>
   <div class="name"><b>Name: </b>Somebody</div>
   <div class="city"><b>City: </b>Mordor</div>
+  <button>Details</button>
 </div>
 ```
 
@@ -112,4 +113,3 @@ to
 ```
 
 this will cause calls to function `t` to also be wrapped into arrow function that can be re-evalueated
-
